@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4 justify-center mb-12">
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
             onClick={() => scrollToSection("contact")}
           >
             <Mail className="mr-2 h-5 w-5" />
@@ -39,7 +39,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-primary/30 hover:bg-primary/10"
+            className="border-primary/30 hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:border-primary/50"
             onClick={() => scrollToSection("projects")}
           >
             View Projects
@@ -51,23 +51,23 @@ const Hero = () => {
             href="https://github.com/Pupper0n1" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
+            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30"
           >
-            <Github className="h-5 w-5" />
+            <Github className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
           </a>
           <a 
             href="https://linkedin.com/in/wilbur-elbouni" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
+            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30"
           >
-            <Linkedin className="h-5 w-5" />
+            <Linkedin className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
           </a>
           <a 
             href="mailto:elbouni.wassem@gmail.com"
-            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
+            className="p-3 rounded-full bg-secondary hover:bg-primary/20 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30"
           >
-            <Mail className="h-5 w-5" />
+            <Mail className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
           </a>
         </div>
       </div>

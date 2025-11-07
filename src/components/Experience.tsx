@@ -52,11 +52,11 @@ const Experience = () => {
           
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="relative animate-slide-up group" style={{ animationDelay: `${index * 0.1}s` }}>
                 {/* Timeline dot */}
-                <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-primary border-4 border-background hidden md:block" />
+                <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-primary border-4 border-background hidden md:block transition-all duration-300 group-hover:scale-125 group-hover:shadow-lg group-hover:shadow-primary/50" />
                 
-                <Card className="ml-0 md:ml-20 p-6 bg-card hover:shadow-lg transition-all duration-300 border-border/50">
+                <Card className="ml-0 md:ml-20 p-6 bg-card hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 border-border/50 hover:-translate-x-2 hover:border-primary/30">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <Briefcase className="h-5 w-5 text-primary" />
@@ -84,13 +84,13 @@ const Experience = () => {
         
         {/* Achievements */}
         <div className="mt-16 grid md:grid-cols-2 gap-6">
-          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
-            <Award className="h-8 w-8 text-primary mb-4" />
+          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 group cursor-default">
+            <Award className="h-8 w-8 text-primary mb-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
             <h3 className="font-bold text-lg mb-2">IBM TechXchange Best Rated Session</h3>
             <p className="text-sm text-muted-foreground">October 2024</p>
           </Card>
-          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
-            <Award className="h-8 w-8 text-primary mb-4" />
+          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 group cursor-default">
+            <Award className="h-8 w-8 text-primary mb-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
             <h3 className="font-bold text-lg mb-2">Microsoft Certified: Azure Cloud Practitioner</h3>
             <p className="text-sm text-muted-foreground">May 2023</p>
           </Card>

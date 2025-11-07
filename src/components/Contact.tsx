@@ -12,13 +12,13 @@ const Contact = () => {
             I'm always interested in hearing about new opportunities and interesting projects
           </p>
           
-          <Card className="p-8 bg-card border-border/50">
+          <Card className="p-8 bg-card border-border/50 hover:border-primary/20 transition-all duration-300">
             <div className="grid md:grid-cols-2 gap-6">
               <a 
                 href="mailto:elbouni.wassem@gmail.com"
-                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-colors group"
+                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-all duration-300 group hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               >
-                <Mail className="h-5 w-5 text-primary" />
+                <Mail className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 <div className="text-left">
                   <p className="text-sm text-muted-foreground">Email</p>
                   <p className="font-medium group-hover:text-primary transition-colors">elbouni.wassem@gmail.com</p>
@@ -27,9 +27,9 @@ const Contact = () => {
               
               <a 
                 href="tel:825-561-6645"
-                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-colors group"
+                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-all duration-300 group hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               >
-                <Phone className="h-5 w-5 text-primary" />
+                <Phone className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 <div className="text-left">
                   <p className="text-sm text-muted-foreground">Phone</p>
                   <p className="font-medium group-hover:text-primary transition-colors">(825) 561-6645</p>
@@ -40,9 +40,9 @@ const Contact = () => {
                 href="https://github.com/Pupper0n1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-colors group"
+                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-all duration-300 group hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               >
-                <Github className="h-5 w-5 text-primary" />
+                <Github className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 <div className="text-left">
                   <p className="text-sm text-muted-foreground">GitHub</p>
                   <p className="font-medium group-hover:text-primary transition-colors">Pupper0n1</p>
@@ -53,9 +53,9 @@ const Contact = () => {
                 href="https://linkedin.com/in/wilbur-elbouni"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-colors group"
+                className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-primary/20 transition-all duration-300 group hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               >
-                <Linkedin className="h-5 w-5 text-primary" />
+                <Linkedin className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 <div className="text-left">
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
                   <p className="font-medium group-hover:text-primary transition-colors">wilbur-elbouni</p>

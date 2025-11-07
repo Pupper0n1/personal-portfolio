@@ -40,11 +40,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="p-6 bg-card hover:shadow-xl transition-all duration-300 border-border/50 group animate-slide-up"
+              className="p-6 bg-card hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 border-border/50 group animate-slide-up hover:-translate-y-2 hover:border-primary/30"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                   <Code2 className="h-6 w-6 text-primary" />
                 </div>
                 <span className="text-xs text-muted-foreground">{project.period}</span>
@@ -69,7 +69,7 @@ const Projects = () => {
               
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, i) => (
-                  <Badge key={i} variant="secondary" className="bg-secondary/50">
+                  <Badge key={i} variant="secondary" className="bg-secondary/50 hover:bg-primary/20 hover:scale-105 transition-all duration-200 cursor-default">
                     {tech}
                   </Badge>
                 ))}

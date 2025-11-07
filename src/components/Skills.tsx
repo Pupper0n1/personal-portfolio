@@ -39,11 +39,11 @@ const Skills = () => {
             return (
               <Card 
                 key={index} 
-                className="p-6 bg-card border-border/50 hover:border-primary/30 transition-all duration-300 animate-slide-up"
+                className="p-6 bg-card border-border/50 hover:border-primary/30 transition-all duration-300 animate-slide-up hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-primary/10">
+                  <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
                     <Icon className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold">{category.title}</h3>
@@ -53,7 +53,7 @@ const Skills = () => {
                   {category.skills.map((skill, i) => (
                     <span 
                       key={i} 
-                      className="px-3 py-1.5 bg-secondary rounded-md text-sm hover:bg-primary/20 transition-colors cursor-default"
+                      className="px-3 py-1.5 bg-secondary rounded-md text-sm hover:bg-primary/20 hover:scale-110 hover:-translate-y-0.5 transition-all duration-200 cursor-default hover:shadow-md"
                     >
                       {skill}
                     </span>
