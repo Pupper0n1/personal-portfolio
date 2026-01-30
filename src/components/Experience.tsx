@@ -115,7 +115,15 @@ const Experience = () => {
           <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 group cursor-default">
             <Award className="h-8 w-8 text-primary mb-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
             <h3 className="font-bold text-lg mb-2">Microsoft Certified: Azure Cloud Practitioner</h3>
-            <p className="text-sm text-muted-foreground">May 2023</p>
+            <p className="text-sm text-muted-foreground mb-2">May 2023</p>
+            <a 
+              href="https://www.credly.com/badges/01ce9a9f-dc52-47ce-9fd5-b75452b23c4b/linked_in_profile" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs text-primary hover:underline mt-2 inline-block"
+            >
+              View Badge →
+            </a>
           </Card>
         </div>
       </div>
