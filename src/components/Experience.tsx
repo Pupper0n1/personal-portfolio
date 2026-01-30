@@ -83,7 +83,21 @@ const Experience = () => {
         </div>
         
         {/* Achievements */}
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
+          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 group cursor-default">
+            <Award className="h-8 w-8 text-primary mb-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
+            <h3 className="font-bold text-lg mb-2">Canada CIO Awards Winner</h3>
+            <p className="text-sm text-muted-foreground mb-2">November 2025</p>
+            <p className="text-xs text-muted-foreground italic">Learn in your own language</p>
+            <a 
+              href="https://event.idc.com/wp-content/uploads/2025/11/CIO-Awards-Canada-Winning-Projects-2025.pdf?RefId=LI" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs text-primary hover:underline mt-2 inline-block"
+            >
+              View Award →
+            </a>
+          </Card>
           <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 group cursor-default">
             <Award className="h-8 w-8 text-primary mb-4 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
             <h3 className="font-bold text-lg mb-2">IBM TechXchange Best Rated Session</h3>
