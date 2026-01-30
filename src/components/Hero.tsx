@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -43,6 +43,17 @@ const Hero = () => {
             onClick={() => scrollToSection("projects")}
           >
             View Projects
+          </Button>
+          <Button 
+            size="lg" 
+            variant="outline"
+            className="border-primary/30 hover:bg-primary/10 transition-all duration-300 hover:scale-105 hover:border-primary/50"
+            asChild
+          >
+            <a href="/Wilbur_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FileText className="mr-2 h-5 w-5" />
+              Resume
+            </a>
           </Button>
         </div>
         
