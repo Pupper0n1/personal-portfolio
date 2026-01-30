@@ -4,6 +4,28 @@ import { ExternalLink, Code2 } from "lucide-react";
 
 const projects = [
   {
+    title: "WYSIWYG Markdown Editor",
+    description: "Built a real-time collaborative markdown editor with WYSIWYG functionality. Features include live preview, syntax highlighting, and seamless markdown-to-HTML conversion.",
+    tech: ["Next.js", "Express.js", "Tiptap", "TypeScript"],
+    highlights: [
+      "Real-time collaborative editing with conflict resolution",
+      "Rich text editing with Tiptap integration",
+      "Seamless markdown and HTML export options"
+    ],
+    period: "Oct 2024 – Present"
+  },
+  {
+    title: "Support Pipeline",
+    description: "Developed a customer support ticketing system to manage and track support requests. Built RESTful APIs and integrated real-time notifications for ticket updates.",
+    tech: ["NestJS", "React", "PostgreSQL", "Redis"],
+    highlights: [
+      "Real-time ticket notifications via WebSockets",
+      "Redis caching for improved response times",
+      "Comprehensive ticket tracking and analytics"
+    ],
+    period: "May 2024 – Oct 2024"
+  },
+  {
     title: "Jira Slack Assistant",
     description: "Built a Slack application that reminds users about Jira issues with outdated or missing dates, helping teams maintain sprint accuracy. Integrated interactive Slack modals and message shortcuts to let users update issue fields directly within Slack.",
     tech: ["Node.js", "Slack API", "Express", "TypeScript", "PostgreSQL"],
